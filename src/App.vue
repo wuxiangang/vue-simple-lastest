@@ -1,26 +1,23 @@
-<script>
-import { Vue, Component } from 'vue-property-decorator'
+<template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view/>
+  </div>
+</template>
 
-@Component
-export default class ss extends Vue {
-  render () {
-    return (
-      <div id="app">
-        <router-view />
-      </div>
-    )
-  }
+<script>
+export default {
+  name: 'App'
 }
 </script>
 
-<style scoped lang="scss">
-  #app {
-    color: $red;
-    text-align: center;
-    img {
-      margin: 0 auto;
-      display: block;
-      transform: scale(.6);
-    }
-  }
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
