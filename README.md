@@ -1,4 +1,13 @@
-# sss
+# webpack 4 and babel 7 简单的vue项目
+
+``` bash
+# 支持jsx写法
+
+# 支持dll
+
+# 支持externals
+
+```
 
 > A Vue.js project
 
@@ -8,23 +17,20 @@
 # install dependencies
 npm install
 
+# 如有dll预打包
+npm run dll
+
 # serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 注意点：
+
+``` bash
+dll 打包 vue， vendor里写成vue/dist/vue.js
+简单版本不多说明，东西比较少，但是比较实用
+```
