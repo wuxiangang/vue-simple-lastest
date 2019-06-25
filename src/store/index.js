@@ -1,19 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import test from './modules/test'
 
 Vue.use(Vuex)
 
-const state = {}
-
-const actions = {}
-
-const mutations = {}
-
-const getters = {}
-
 export default new Vuex.Store({
-  state,
-  getters,
-  actions,
-  mutations
+  modules: {
+    test
+  }
 })

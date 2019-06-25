@@ -6,7 +6,14 @@
     ["@babel/plugin-proposal-class-properties", { "loose": true }],
     ["@babel/plugin-proposal-object-rest-spread", { "loose": true, "useBuiltIns": true }],
     ["@babel/plugin-syntax-dynamic-import"],
-    ["transform-vue-jsx"]
+    ["transform-vue-jsx"],
+    [
+      "import",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
   ],
   "env": {
     "test": {
